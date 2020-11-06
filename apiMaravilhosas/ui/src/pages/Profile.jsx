@@ -13,7 +13,7 @@ const Profile = () => {
            .then(res => res.json())
            .then((res) => setMaravilhosa(res))
     },[url])
-
+    console.log(maravilhosa)
     document.body.style.top = `-${window.scrollY}px`;
 
     async function excluirPerfil() {

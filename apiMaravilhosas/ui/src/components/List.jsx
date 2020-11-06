@@ -24,6 +24,7 @@ const List = () => {
            .then((res) => setMaravilhosas(res))
     },[])
 
+
     return (
         <main>
             <section className="maravilhosas container" id="mulheres-maravilhosas">

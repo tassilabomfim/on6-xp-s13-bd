@@ -3,7 +3,10 @@ const app = express();
 
 const cors = require('cors');
 
-const maravilhosas = require('./routes/maravilhosas-routes');
+const database = require('./models/repository')
+database.connect()
+
+const maravilhosas = require('./routes/maravilhosas-routes')
 
 app.use(cors());
 app.use(express.json());
